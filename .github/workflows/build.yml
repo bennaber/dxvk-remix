@@ -8,15 +8,15 @@ on:
 
 jobs:
   build-windows:
-    runs-on: windows-2022
+    runs-on: windows-10
 
     strategy:
       matrix:
         include:
-          - build-flavour: debug
-            output-subdir: _Comp64Debug
-          - build-flavour: debugoptimized
-            output-subdir: _Comp64DebugOptimized
+#          - build-flavour: debug
+#            output-subdir: _Comp64Debug
+#          - build-flavour: debugoptimized
+#            output-subdir: _Comp64DebugOptimized
           - build-flavour: release
             output-subdir: _Comp64Release
 
