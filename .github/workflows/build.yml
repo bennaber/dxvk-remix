@@ -35,7 +35,7 @@ jobs:
       run: pip install meson==0.62.1
     
     - name: Build
-      shell: pwsh
+      shell: powershell
       run: |
         Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
         . .\build_common.ps1
